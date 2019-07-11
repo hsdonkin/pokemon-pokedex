@@ -125,9 +125,9 @@ export class PokemonListByType {
         for (let i = 0; i < typeResponse.pokemon.length; i++) {
           // only pushing pokemon from the first 151 to the list
 
-          if (parseInt(typeResponse.pokemon[i].pokemon.url.slice(34, -1)) <= 151) {
+          // if (parseInt(typeResponse.pokemon[i].pokemon.url.slice(34, -1)) <= 151) {
             this.list.push(typeResponse.pokemon[i].pokemon.name);
-          }
+          // }
         }
 
         // front end stuff for the type lists goes here
